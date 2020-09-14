@@ -1,9 +1,9 @@
 <?php 
-session_start();
+// session_start();
 
-if($_SESSION['role'] != 'mahasiswa') {
-    header('location:index.php');
-}
+// if($_SESSION['role'] != 'mahasiswa') {
+//     header('location:index.php');
+// }
 
 require_once('header.php');
 require('controller.php'); 
@@ -31,7 +31,8 @@ require('controller.php');
             <thead class="uk-dark">
                 <tr>
                     <th class="uk-text-center">Ambil/Tidak</th>
-                    <th class="uk-text-center">Mata Kuliah</th>
+                    <th class="uk-text-center">Matakuliah</th>
+                    <th class="uk-text-center">Kode Matakuliah</th>
                     <th class="uk-text-center">Kelas</th>
                     <th class="uk-text-center">Semester</th>
                 </tr>
@@ -42,6 +43,7 @@ require('controller.php');
                 <tr>
                     <td class="uk-text-center"><label><input class="uk-checkbox" type="checkbox"></label></td>
                     <td><?php echo $q['nama_mk']; ?></td>
+                    <td class="uk-text-center"><?php echo $q['kode_mk']; ?></td>
                     <td class="uk-text-center">
                         <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center">
                             <label><input class="uk-radio" type="radio" name="<?php echo $q['nama_mk']; ?>"> A</label>

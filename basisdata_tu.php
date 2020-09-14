@@ -1,6 +1,5 @@
 <?php 
 
-
 require_once('header.php');
 require('controller.php'); 
 ?>
@@ -44,11 +43,11 @@ require('controller.php');
                 <td><?php echo $xd["tmpt_lahir"];?></td>
                 <td class="uk-text-center"><?php echo $xd["tgl_lahir"];?></td>
                 <td><?php echo $xd["alamat"];?></td>
-                <td class="uk-text-center"><?php echo $xd["jurusan"];?></td>
+                <td class="uk-text-left"><?php echo $xd["jurusan"];?></td>
                 <td class="uk-text-center"><?php echo $xd["thn_masuk"];?></td>
                 <td class="uk-text-center">
                     <a href="#modal-update" uk-icon="comments" class="" uk-toggle></a>
-                    <a href="delete_data.php?nim=<?php echo $xd["nim"]?>" uk-icon="trash" class="uk-margin-small-left"></a>
+                    <a href="delete_data.php?nim=<?php echo $xd['nim']?>" uk-icon="trash" class="uk-margin-small-left"></a>
                 </td>
             </tr>
 

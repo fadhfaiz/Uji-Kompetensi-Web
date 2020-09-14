@@ -1,8 +1,7 @@
 <?php 
 
-
 require_once('header.php');
-require('controller.php'); 
+require('controller.php');  
 ?>
 
 <nav class="uk-navbar-container" uk-navbar>
