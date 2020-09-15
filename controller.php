@@ -12,7 +12,6 @@
         die("Connection failed: " . $conn->connect_error);
     }
     // echo "<p class='uk-text-center uk-text-lighter'>Terkoneksi database</p>";
-
     // echo md5($katasandi_mhs);
 
     if(isset($_POST['namamhs'])) {

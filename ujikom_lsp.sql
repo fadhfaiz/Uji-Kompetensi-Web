@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2020 at 12:02 AM
+-- Generation Time: Sep 15, 2020 at 02:00 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -57,7 +57,9 @@ CREATE TABLE `mahasiswa` (
 INSERT INTO `mahasiswa` (`nim`, `nama`, `tmpt_lahir`, `tgl_lahir`, `alamat`, `jurusan`, `thn_masuk`) VALUES
 ('1600018001', 'Joko Widodo', 'Surakarta', '1960-11-22', 'Jalan Kaliurang Km 20', 'Biologi', 2001),
 ('1600018002', 'Muhammad Aziz', 'Pagar Alam', '1982-07-21', 'Jalan Magelang', 'Teknik Sipil', 2017),
-('1600018003', 'Faadihilah A Faiz', 'Bantul', '1998-01-21', 'Jalan Imogiri Barat', 'Ekonomi Syariah', 2016);
+('1600018003', 'Faadihilah A Faiz', 'Bantul', '1998-01-21', 'Jalan Imogiri Barat', 'Ekonomi Syariah', 2016),
+('1600018004', 'Insan Kamil', 'Banjarmasin', '1981-09-14', 'Jalan Wonosari', 'Bahasa Indonesia', 2011),
+('1600018005', 'Citra Maya', 'Pekanbaru', '1999-06-05', 'Jalan Bantul', 'Matematika', 2019);
 
 -- --------------------------------------------------------
 
@@ -81,7 +83,8 @@ INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `sks_mk`, `semester_mk`) VALUES
 ('MK02', 'Logika Informatika', 3, '1'),
 ('MK03', 'Pemrograman Web', 3, '2'),
 ('MK04', 'Algoritma Pemrograman', 3, '3'),
-('MK05', 'Kecerdasan Buatan', 3, '5');
+('MK05', 'Kecerdasan Buatan', 3, '5'),
+('MK06', 'Data Mining', 3, '5');
 
 -- --------------------------------------------------------
 
