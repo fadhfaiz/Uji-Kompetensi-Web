@@ -1,9 +1,9 @@
 <?php 
-// session_start();
+session_start();
 
-// if($_SESSION['role'] != 'mahasiswa') {
-//     header('location:index.php');
-// }
+if($_SESSION['role'] != 'mahasiswa') {
+    header('location:index.php');
+}
 
 require_once('header.php');
 require('controller.php'); 

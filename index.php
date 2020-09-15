@@ -25,35 +25,35 @@
 </div>
 
 <?php
-    // session_start();
-    // session_destroy();
-    // session_start();
+    session_start();
+    session_destroy();
+    session_start();
 
-    // if(isset($_POST['uname'])) {
-    //     $user = $_POST['uname'];
-    //     $pass = $_POST['password'];
+    if(isset($_POST['uname'])) {
+        $user = $_POST['uname'];
+        $pass = $_POST['password'];
         
-    //     $uname = array('mhs', 'tu');
-    //     $password = array('mhs','tu');
+        $uname = array('mhs', 'tu');
+        $password = array('mhs','tu');
 
-    //     // echo md5($password);
+        // echo md5($password);
 
-    //     $index = array_search($user, $uname);
+        $index = array_search($user, $uname);
         
-    //     if($index > -1) {
-    //         if($index == 0) {
-    //             if($pass == $password[$index]) {
-    //                 $_SESSION['role'] = 'mahasiswa';
-    //                 header('location:dashboard_mhs.php');
-    //             }
-    //         } else {
-    //             if($pass == $password[$index]) {
-    //                 $_SESSION['role'] = 'tu';
-    //                 header('location:dashboard_tu.php');
-    //             }
-    //         }
+        if($index > -1) {
+            if($index == 0) {
+                if($pass == $password[$index]) {
+                    $_SESSION['role'] = 'mahasiswa';
+                    header('location:dashboard_mhs.php');
+                }
+            } else {
+                if($pass == $password[$index]) {
+                    $_SESSION['role'] = 'tu';
+                    header('location:dashboard_tu.php');
+                }
+            }
 
-    //     }
-    // }
+        }
+    }
 ?>
 <?php require_once('footer.php'); ?>
